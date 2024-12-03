@@ -5,6 +5,7 @@ public class Role
     private const string ReadOnlyRole = "Role.ReadOnly";
     private const string UserRole = "Role.User";
     private const string AdminRole = "Role.Admin";
+    private const string WorkflowStatusWriteRole = "WorkflowStatus.Write";
 
     /// <summary>
     /// The user must be an admin
@@ -25,4 +26,9 @@ public class Role
     public const string Any = $"{ReadOnlyRole}, {UserRole}, {Admin}";
 
     public const string InspectionDataRead = "InspectionData.Read";
+
+    /// <summary>
+    /// Role required to update workflow statuses
+    /// </summary>
+    public const string WorkflowStatusWrite = WorkflowStatusWriteRole;
 }
